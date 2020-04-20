@@ -17,14 +17,17 @@ h2 {
 }
 .with-circle::after {
     content: "";
-    position: relative;
+    position: absolute;
     top: 0;
-    height:45x;
-    width:45px;
+    left: 50%;
+    width: 0;
+    height: 0;
     border-radius: 90px 90px 0 0;
+    border: 12px solid transparent;
     background:orange;
-    border-radius: 50%
-      
+    border-top: 0;
+    margin-left: -12px;
+    margin-top: -12px;      
 }
 
 .with-triangle {
