@@ -1,0 +1,48 @@
+h2 {
+    text-align: center;
+    margin-top: 200px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px;
+    background-color: orange;
+}
+.with-circle {
+    position: relative;
+}
+.with-circle::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 90px 90px 0 0;
+    border: 12px solid transparent;
+    background:orange;
+    border-top: 0;
+    margin-left: -12px;
+    margin-top: -12px;      
+}
+
+.with-triangle {
+    position: relative;
+}
+.with-triangle::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-bottom-color: orange;
+    border-top: 0;
+    margin-left: -12px;
+    margin-top: -12px;
+}
