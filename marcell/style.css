@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 50%;
+    margin: 200px auto;
+}
+
+.box {
+    display: inline-block;
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: relative;
+
+}
+
+.with-circle::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: orange;
+    border-radius: 50%;
+    top: -15%;
+    left: 35px;
+}
+
+.with-triangle::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid orange;
+    top: -15%;
+    left: 35px;
+}
