@@ -1,0 +1,36 @@
+.box{
+    margin: 0 auto;
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: inline-block; 
+    margin-top: 5%;
+}
+
+.with-triangle::before{
+    content: "";
+    width: 0;
+    height: 0;
+    top: -50px;
+    left: 30%;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid tomato;
+    position: absolute;
+  }
+
+  .with-circle::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 25%;
+    border-radius: 50%;
+    background-color: tomato;
+    transform: scale(0.8);
+    position: absolute;
+  }
+
+  
+ 
