@@ -1,5 +1,6 @@
 h2 {
     text-align: center;
+    margin-top: 200px;
 }
 .container {
     display: flex;
@@ -8,24 +9,28 @@ h2 {
 .box {
     width: 200px;
     height: 200px;
-    margin: 100px 20px;
+    margin: 20px 20px;
     background-color: orange;
 }
 .with-circle {
     position: relative;
 }
 .with-circle::after {
-    position: absolute;
+    content: "";
+    position: relative;
     top: 0;
-    height:45px;
-    width:90px;
+    height:45x;
+    width:45px;
     border-radius: 90px 90px 0 0;
     background:orange;
+    border-radius: 50%
+      
 }
-.with-trangle {
+
+.with-triangle {
     position: relative;
 }
-.with-trangle::after {
+.with-triangle::after {
     content: "";
     position: absolute;
     top: 0;
