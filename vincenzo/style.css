@@ -1,0 +1,39 @@
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: orange;
+    margin-top: 100px;
+    margin-right: 50px;
+    position: relative;
+}
+
+.with-circle::before {
+    content: "";
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: orange;
+    position: absolute;
+    bottom: 87%;
+    transform: translateX(75px);
+}
+
+.with-triangle::before {
+    content: "";
+    position: absolute;
+    bottom: 92%;
+    transform: rotate(-90deg) translateY(83px);
+    background: #fff;
+    border-top: 30px solid transparent;
+    border-left: 30px solid orange;
+    border-bottom: 30px solid transparent;
+}
