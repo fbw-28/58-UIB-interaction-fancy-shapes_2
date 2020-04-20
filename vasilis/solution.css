@@ -1,0 +1,36 @@
+
+.box {
+    width: 200px;
+    height: 200px;background-color: orange;
+    position: relative;
+    top: 30vh;
+    left: 30%;
+    display: inline-block;
+    margin-left: 5%;
+}
+h2 {
+    position: relative;
+    top: 20vh;
+    left: 38%;
+}
+
+.with-triangle::before {
+    content: "";
+    position: absolute;
+    right: 35px;
+    top: -40px;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 100px solid orange;
+}
+.with-circle::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: orange;
+    top: -33px;
+    left: 65px;
+
+}
