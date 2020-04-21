@@ -1,0 +1,52 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 40px;
+    margin: auto;
+    justify-items: center;
+}
+
+.box{
+    width: 200px;
+    height: 150px;
+    background-color: orange;
+    position: relative;
+
+}
+.with-circle{
+    grid-column: 3 / 4 ;
+}
+
+.with-circle::before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 80px;
+    border-radius: 50%;
+    border: 20px solid orange;
+
+}
+
+.with-triangle{
+    grid-column: 4 / 5;
+}
+
+.with-triangle::after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 80px;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent ;
+    border-bottom: 20px solid orange;
+}
